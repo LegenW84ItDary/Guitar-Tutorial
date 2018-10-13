@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image:image(pexels-photo-326311)
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
