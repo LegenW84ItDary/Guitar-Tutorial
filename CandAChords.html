@@ -29,6 +29,19 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
     
+<!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="Tuning.html">Tuning</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="CandAChords.html">Chords C &amp; A</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="GandEChords.html">Chords G &amp; E</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="DandFChords.html">Chords D &amp; F</a></li>
+      <li class="divider" tabindex="-1"></li>
+    <li><a href="AmandDm.html">Chords Am &amp; Dm</a></li>
+  </ul>
+    
 <!--Navbar-->
 <nav class="black">
   <div class="nav-wrapper black">
@@ -36,47 +49,27 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="Index.html">Home Page</a></li>
       <li><a href="AboutUs.html">About Us</a></li>
-      <li><a href="Tutorials.html">Tutorials</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li> 
       <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
-  </div>
-    <div class="nav-content black">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#tuning">Tuning</a></li>
-        <li class="tab"><a href="#step1">Step 1</a></li>
-        <li class="tab"><a href="#step2">Step 2</a></li>
-        <li class="tab"><a href="#step3">Step 3</a></li>
-      </ul>
     </div>
 </nav>
     
     <!--row by Navbar-->
       <div class="row">
-          <div class="col s4">
+          <div class="col s12">
           </div>
           </div>
-    
-    <!--row 1-->
-      <div class="row">
-          <div class="col s4">
-          </div>
-          </div>
-    
-    <!--row 2-->
-      <div class="row">
-          <div class="col s4">
-          </div>
-          </div>
-    
-  <div id="tuning" class="col s12">Tuning</div>
-    
+      
+    <!--C Chords-->
     <div class="row">
     <div class="col s6">
         <!-- Promo Content 1 goes here -->
           
           <div class="card black">
         <div class="card-content white-text">
-          <span class="card-title">Tuning</span>
+          <span class="card-title">C Chord</span>
           <div class="video-container">
         <iframe width="853" height="480" src="Assets/Project.mp4" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -90,26 +83,56 @@
               
       <div class="card black">
         <div class="card-content white-text">
-          <span class="card-title">Tuning</span>
-          <p>Hi my name is Samuel Terry and I have created this website to help people who want to learn guitar. I am also a fellow learner so while you are leanring how to play, I will be too! <br> Since I have been young, I have always wanted to learn how to play guitar. Therefore I thought I would push myself for this project and help those who also want to push themselves to learn!</p>
+          <span class="card-title">C Chord</span>
+          <p>For the C chord your fingers will need to be in the positions it shows on the diagram below. Your first finger will be placed on high E, Your second finger will be placed on D and your third finger will be on String A. </p>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
         </div>
       </div>
     </div>
+    
+    <div class="row">
+    <div class="col s4">
+        <!-- Promo Content 1 goes here -->
+    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/ChordC.jpg">
+          <span class="card-title">Hello</span>
+        </div>
+      </div>
+        </div>
+        
+        <div class="col s4">
+        <!-- Promo Content 1 goes here -->
+    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/Background.png">
+          <span class="card-title">Hello</span>
+        </div>
+      </div>
+        </div>
+        
+        <div class="col s4">
+        <!-- Promo Content 1 goes here -->
+    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/Background.png">
+          <span class="card-title">Hello</span>
+        </div>
+      </div>
+        </div>
         </div>
     
-  <div id="step1" class="col s12">Step 1</div>
-    
+    <!--A Chord-->
     <div class="row">
     <div class="col s6">
         <!-- Promo Content 1 goes here -->
           
           <div class="card black">
         <div class="card-content white-text">
-          <span class="card-title">About Me</span>
+          <span class="card-title">A Chord</span>
           <div class="video-container">
         <iframe width="853" height="480" src="Assets/Project.mp4" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -123,8 +146,8 @@
               
       <div class="card black">
         <div class="card-content white-text">
-          <span class="card-title">About Me</span>
-          <p>Hi my name is Samuel Terry and I have created this website to help people who want to learn guitar. I am also a fellow learner so while you are leanring how to play, I will be too! <br> Since I have been young, I have always wanted to learn how to play guitar. Therefore I thought I would push myself for this project and help those who also want to push themselves to learn!</p>
+          <span class="card-title">A Chord</span>
+          <p>For the A chord</p>
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
@@ -133,43 +156,41 @@
       </div>
     </div>
         </div>
-    
-  <div id="step2" class="col s12">Step 2</div>
     
     <div class="row">
-    <div class="col s6">
+    <div class="col s4">
         <!-- Promo Content 1 goes here -->
-          
-          <div class="card black">
-        <div class="card-content white-text">
-          <span class="card-title">About Me</span>
-          <div class="video-container">
-        <iframe width="853" height="480" src="Assets/Project.mp4" frameborder="0" allowfullscreen></iframe>
-      </div>
-      </div>
-    </div>  
+    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/ChordA.jpg">
+          <span class="card-title">Hello</span>
         </div>
-    
-    
-    <div class="col s6">
+      </div>
+        </div>
+        
+        <div class="col s4">
         <!-- Promo Content 1 goes here -->
-              
-      <div class="card black">
-        <div class="card-content white-text">
-          <span class="card-title">About Me</span>
-          <p>Hi my name is Samuel Terry and I have created this website to help people who want to learn guitar. I am also a fellow learner so while you are leanring how to play, I will be too! <br> Since I have been young, I have always wanted to learn how to play guitar. Therefore I thought I would push myself for this project and help those who also want to push themselves to learn!</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/Background.png">
+          <span class="card-title">Hello</span>
         </div>
       </div>
-    </div>
         </div>
+        
+        <div class="col s4">
+        <!-- Promo Content 1 goes here -->
     
-  <div id="step3" class="col s12">Step 3</div>
-    
-    
+      <div class="card">
+        <div class="card-image">
+          <img src="Assets/Background.png">
+          <span class="card-title">Hello</span>
+        </div>
+      </div>
+        </div>
+        </div>
     
     <!--Footer-->
     <footer class="page-footer black">
