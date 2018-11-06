@@ -67,57 +67,65 @@
           </div>
           </div>
     
-    <!--row-->
-    <div class="row">
-          <div class="col s12">
-          </div>
-          </div>
     
     <!--Text Input-->
-    <div class="row">
+    <p class="purple-text darken-3">New Customers</p>
+          
+          <div class="row">
     <form class="col s12">
       <div class="row">
-          <p class="purple text-black">New User</p>
         <div class="input-field col s6">
-          <input placeholder="Placeholder" id="user_name" type="text" class="validate">
-          <label for="user_name">User Name</label>
+          <label style="color: purple">Username</label><input name="txtUsername" type="text" class="white-text"/>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+          <label style="color: purple">Password</label><input name="txtPassword" type="text" class="white-text"/>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <label style="color: purple">First Name</label><input type ="text" name = "txtFirstname" class="white-text" />
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <label style="color: purple">Last Name</label><input type ="text" name="txtLastname" class="white-text" />
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
+          <label style="color: purple">Telephone</label><input type="text" name="txtTelephone" class="white-text"/>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-    </form>
-    
-    <!--Text Input-->
-    <form class="col s12">
-      <div class="row">
-          <p class="purple text-black">Existing User</p>
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="user_name" type="text" class="validate">
-          <label for="user_name">User Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
+          <label style="color: purple">Email</label><input type="text" name="txtEmail" class="white-text"/>
         </div>
       </div>
     </form>
   </div>
+    
+    <!--Text Input-->
+        <div> 
+           <form action= "" method="post">
+          <div class="row">
+          <form class="col s12">
+          <li class="divider"></li>
+          <p class="purple-text darken-3">Existing Customers</p>
+          <div class="row">
+          <form class="col s12">
+              <div class="row">
+        <div class="input-field col s12">
+          <label style="color: purple">Username</label><input name="txtUsername" type="text" class="white-text">
+        </div>
+      </div>
+          <div class="row">
+        <div class="input-field col s12">
+          <label style="color: purple">Password</label><input name="txtPassword" type= "text" class="white-text">
+            <input type = "submit" class="btn waves-effect waves-light pink darken-3" value = "Submit"/>
+        </div>
+      </div>
+    </form>
+    </div>
     
     <!--Footer-->
     <footer class="page-footer black">
