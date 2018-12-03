@@ -12,6 +12,20 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+        
+        @-webkit-keyframes fadeInLeft {
+        from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        }
+
+        to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        }
+       }
     </style>
 </head>
 <body>
@@ -37,9 +51,8 @@
       <li class="divider" tabindex="-1"></li>
       <li><a href="Minor.html">Minor</a></li>
       <li class="divider" tabindex="-1"></li>
-      <li><a href="Major.html">Major</a></li>
-      <li class="divider" tabindex="-1"></li>
       <li><a href="Major7.html">Major 7</a></li>
+      <li class="divider" tabindex="-1"></li>
       <li><a href="Minor7.html">Minor 7</a></li>
       <li class="divider" tabindex="-1"></li>
       <li><a href="SeventhChord.html">Seventh Chord</a></li>
@@ -62,7 +75,7 @@
     </div>
 </nav>
     
-    <h1 class="black-text">Guitar Tutorials</h1>
+    <a href="animate.css-master/source/fading_entrances/fadeInLeft.css"><h1 style="text-black">Guitar Tutorials</h1></a>
     <li class="divider black" tabindex="-1"></li>
     
     <!--row by Navbar-->
@@ -71,26 +84,47 @@
           </div>
           </div>
     
-    <!--row 1-->
+        <!--carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img width="1500" height="350" src="Assets/ChordC.jpg">
+    </div>
+    <div class="carousel-item">
+      <img width="1500" height="350" src="Assets/Dm.jpg">
+    </div>
+    <div class="carousel-item">
+      <img width="1500" height="350" src="Assets/Gm.jpg">
+    </div>
+      <div class="carousel-item">
+      <img width="1500" height="350" src="Assets/Aminor.jpg">
+    </div>
+      <div class="carousel-item">
+      <img width="1500" height="350" src="Assets/Dminor.jpg">
+    </div>
+  </div>
+        
+        <script type="text/javascript" language="javascript">
+            $( document ).ready(function(){
+
+                $(".button-collapse").sideNav();//mobile screen menu init
+
+                $('.carousel').carousel(); //carousel init
+            });
+        </script>
+    </div> 
+    
+    <!--row-->
       <div class="row">
           <div class="col s12">
           </div>
           </div>
     
-    <!--row 2-->
+    <!--row-->
       <div class="row">
           <div class="col s12">
           </div>
           </div>
-
-    <!--Row 1-->
-    <div class="row">
-
-      <div class="col s4">
-        <!-- Promo Content 1 goes here -->
-          <img class="materialboxed" width="1000" src="Assets/CoverImage.png">
-        </div>
-    </div> 
     
     <!--Card-->
      <div class="row">
