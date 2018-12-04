@@ -16,18 +16,20 @@
 </head>
 <body>
      
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link href="css/mystyle.css" type="text/css" rel="stylesheet">
-
+      <link href="css/css/mystyle.css" type="text/css" rel="stylesheet"/>
+       <link rel="stylesheet" href="css/css/animate.min.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-      <!--Import jQuery before materialize.js-->
+    <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+    
     
      <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
@@ -49,6 +51,9 @@
 <!--Navbar-->
 <nav class="black">
   <div class="nav-wrapper black">
+      
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      
     <a href="Index.html" class="brand-logo">Guitar Tutorials</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="Index.html">Home Page<i class="material-icons right">home</i></a></li>
@@ -56,10 +61,20 @@
       <!-- Dropdown Trigger -->
       <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="Questionnaire.html">Questionnaire<i class="material-icons right">question_answer</i></a></li>
-      <li><a href="Login.html">Login</a></li>
+      <li><a href="Login.html">Login<i class="material-icons right">lock</i></a></li>
       <li><a href="ContactUs.html">Contact Us<i class="material-icons right">message</i></a></li>
     </ul>
     </div>
+    
+    <ul class="side-nav" id="mobile-demo">
+         <li><a href="Index.html">Home Page</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Landmarks.html">Tutorials</a></li>
+        <li><a href="Questionnaire.html">Questionnaire</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    
 </nav>
     
     <!--row by Navbar-->
@@ -93,19 +108,20 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
                   <li><a class="grey-text text-lighten-3" href="https://twitter.com/Samuel_Terry98">Twitter</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!"></a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
-    
+    <script>
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
 </body>
 </html>
